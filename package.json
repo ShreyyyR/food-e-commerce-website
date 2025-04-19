@@ -1,0 +1,16 @@
+{
+  "name": "website-food",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "npm start --prefix front-end",
+    "backend": "npm run dev --prefix back-end",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
